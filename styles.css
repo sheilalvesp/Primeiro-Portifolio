@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(119, 88, 119);
+    font-family: 'M PLUS 1p', sans-serif;
+
+}
+
+ul {
+    list-style: none;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    /*background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;*/
+    background: url(./img/TEC.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 210px box-sizing: margin-bottom: 60px;
+}
+
+header ul {
+    display: flex;
+
+}
+
+header ul li {
+    padding: 12px;
+
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 50px
+}
+
+.container .name h5 {
+    font-size: 25px
+}
+
+#arrow {
+    font-size: 30px;
+    cursor: pointer;
+    animation: blink 2s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background-color: rgb(161, 142, 133);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -6px;
+
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 30px;
+    }
+}
+
+
+#about p {
+    max-width: 80%;
+    text-align: center;
+}

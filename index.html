@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aee379bd97.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Sheila Pinheiro</title>
+
+
+</head>
+
+<body>
+    <header>
+
+        <ul>
+            <li><a target="_blank" href="https://github.com/sheilalvesp"> <img src="img/github (1).png"
+                        alt="nave especial spacex" width="30">
+            </li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/sheila-pinheiro-alves/"> <img
+                        src="img/linkedin.png" alt="nave especial spacex" width="30">
+            </li>
+            <li><a target="_blank" href="https://mail.sheila.8883@gmail.com"> <img src="img/o-email.png"
+                        alt="nave especial spacex" width="30">
+            </li>
+            <li><a href="##"> <img src="img/instagram.png" alt="nave especial spacex" width="30">
+        </ul>
+
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+
+                <h1>Sheila Pinheiro</h1>
+                <span>Jacarei-SP, Brasil</span>
+                <h5>Font-End Developer</h5>
+            </div>
+
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-square-caret-down"></i>
+            </div>
+
+            <div style=display:none id="about">
+                <p> Olá! Sou Sheila,formada em Administração em transição de carreira , curso Analise e Desenvolvimento
+                    de Sistemas
+                    na Faculdade Descomplica.
+                </p>
+                <p>
+                    Aprimorando o conhecimento em HTML ,CSS , Javacrip e Java.
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation')
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about')
+            display.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
